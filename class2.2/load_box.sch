@@ -1,0 +1,307 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:switches
+LIBS:fpc
+LIBS:load_box-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR04
+U 1 1 58EEAE1F
+P 2750 6650
+F 0 "#PWR04" H 2750 6400 50  0001 C CNN
+F 1 "GND" H 2750 6500 50  0000 C CNN
+F 2 "" H 2750 6650 50  0001 C CNN
+F 3 "" H 2750 6650 50  0001 C CNN
+	1    2750 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 58EEAE38
+P 2900 6400
+F 0 "C4" H 2925 6500 50  0000 L CNN
+F 1 "C" H 2925 6300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2938 6250 50  0001 C CNN
+F 3 "" H 2900 6400 50  0001 C CNN
+	1    2900 6400
+	1    0    0    -1  
+$EndComp
+Text Notes 2950 6800 0    60   ~ 0
+TODO: Find tact switch
+Wire Wire Line
+	2750 6200 3050 6200
+Wire Wire Line
+	2750 6200 2750 6350
+Wire Wire Line
+	2750 6450 2750 6650
+Wire Wire Line
+	2900 6200 2900 6250
+Connection ~ 2900 6200
+Wire Wire Line
+	2900 6550 2900 6600
+Wire Wire Line
+	2900 6600 2750 6600
+Connection ~ 2750 6600
+Text GLabel 3050 6200 2    60   Output ~ 0
+RSTB
+Text GLabel 1750 6200 2    60   Output ~ 0
+USERB
+Wire Wire Line
+	1450 6200 1750 6200
+Wire Wire Line
+	1450 6200 1450 6350
+Wire Wire Line
+	1450 6450 1450 6950
+$Comp
+L GND #PWR06
+U 1 1 58EEBA66
+P 1450 6950
+F 0 "#PWR06" H 1450 6700 50  0001 C CNN
+F 1 "GND" H 1450 6800 50  0000 C CNN
+F 2 "" H 1450 6950 50  0001 C CNN
+F 3 "" H 1450 6950 50  0001 C CNN
+	1    1450 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 58EEBA98
+P 1600 6350
+F 0 "C9" H 1625 6450 50  0000 L CNN
+F 1 "C" H 1625 6250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1638 6200 50  0001 C CNN
+F 3 "" H 1600 6350 50  0001 C CNN
+	1    1600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 58EEBB6E
+P 1600 5750
+F 0 "#PWR07" H 1600 5600 50  0001 C CNN
+F 1 "+5V" H 1600 5890 50  0000 C CNN
+F 2 "" H 1600 5750 50  0001 C CNN
+F 3 "" H 1600 5750 50  0001 C CNN
+	1    1600 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58EEBB9E
+P 1600 6000
+F 0 "R1" V 1680 6000 50  0000 C CNN
+F 1 "R" V 1600 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1530 6000 50  0001 C CNN
+F 3 "" H 1600 6000 50  0001 C CNN
+	1    1600 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5750 1600 5850
+Wire Wire Line
+	1600 6150 1600 6200
+Connection ~ 1600 6200
+$Comp
+L R R2
+U 1 1 58EEBD44
+P 1600 6700
+F 0 "R2" V 1680 6700 50  0000 C CNN
+F 1 "R" V 1600 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1530 6700 50  0001 C CNN
+F 3 "" H 1600 6700 50  0001 C CNN
+	1    1600 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 6500 1600 6550
+Wire Wire Line
+	1600 6850 1600 6900
+Wire Wire Line
+	1600 6900 1450 6900
+Connection ~ 1450 6900
+$Sheet
+S 1150 2850 1500 2350
+U 58EFB5AA
+F0 "load_box_display" 60
+F1 "load_box_display.sch" 60
+F2 "RESET" I R 2650 3550 60 
+F3 "D/C" I R 2650 3700 60 
+F4 "~CS" I R 2650 3850 60 
+F5 "SCLK" I R 2650 4100 60 
+F6 "MOSI" I R 2650 4250 60 
+F7 "BS0" I L 1150 4450 60 
+F8 "BS1" I L 1150 4600 60 
+F9 "+13V" I R 2650 3050 60 
+$EndSheet
+$Sheet
+S 7050 4150 1550 1000
+U 58EFB5B1
+F0 "load_box_sink" 60
+F1 "load_box_sink.sch" 60
+F2 "VREF" I L 7050 4450 60 
+F3 "MEASURED_VREF" O L 7050 4900 60 
+$EndSheet
+$Sheet
+S 1150 1100 1700 1200
+U 58EFB5E6
+F0 "load_box_power" 60
+F1 "load_box_power.sch" 60
+$EndSheet
+$Sheet
+S 3400 2850 1400 2300
+U 58EFB5A3
+F0 "load_box_mcu" 60
+F1 "load_box_mcu.sch" 60
+F2 "USER_BUTTON" I R 4800 3000 60 
+F3 "RESET_BUTTON" I R 4800 3100 60 
+F4 "GO_BUTTON" I R 4800 3350 60 
+F5 "STEP_VREF" I R 4800 3650 60 
+F6 "STATIC_VREF" I R 4800 3750 60 
+F7 "VREF_SEL" O R 4800 4550 60 
+F8 "MEASURED_VREF" I R 4800 4900 60 
+F9 "OLED_RESET" O L 3400 3550 60 
+F10 "~OLED_CS" O L 3400 3850 60 
+F11 "OLED_SCLK" O L 3400 4100 60 
+F12 "OLED_MOSI" O L 3400 4250 60 
+$EndSheet
+$Sheet
+S 5300 2850 1550 1000
+U 58EFB6AC
+F0 "load_box_interface" 60
+F1 "load_box_interface.sch" 60
+F2 "STATIC_VREF" O L 5300 3750 60 
+F3 "STEP_VREF" O L 5300 3650 60 
+F4 "GO_BUTTON" O L 5300 3350 60 
+F5 "RESET_BUTTON" O L 5300 3100 60 
+F6 "USER_BUTTON" O L 5300 3000 60 
+$EndSheet
+$Sheet
+S 5300 4100 1500 550 
+U 58EFD8F6
+F0 "load_box_vref_mux" 60
+F1 "load_box_vref_mux.sch" 60
+F2 "STEP_VREF" I L 5300 4300 60 
+F3 "STATIC_VREF" I L 5300 4200 60 
+F4 "VREF_SEL" I L 5300 4550 60 
+F5 "VREF" O R 6800 4450 60 
+$EndSheet
+Wire Wire Line
+	4800 3750 5300 3750
+Wire Wire Line
+	5200 3750 5200 4200
+Wire Wire Line
+	5200 4200 5300 4200
+Wire Wire Line
+	5300 4300 5100 4300
+Wire Wire Line
+	5100 4300 5100 3650
+Wire Wire Line
+	4800 3650 5300 3650
+Connection ~ 5100 3650
+Connection ~ 5200 3750
+Wire Wire Line
+	5300 4550 4800 4550
+Wire Wire Line
+	7050 4900 4800 4900
+Wire Wire Line
+	7050 4450 6800 4450
+Wire Wire Line
+	5300 3350 4800 3350
+Wire Wire Line
+	5300 3100 4800 3100
+Wire Wire Line
+	5300 3000 4800 3000
+$Comp
+L +3.3V #PWR?
+U 1 1 58F00E63
+P 1050 4350
+F 0 "#PWR?" H 1050 4200 50  0001 C CNN
+F 1 "+3.3V" H 1050 4490 50  0000 C CNN
+F 2 "" H 1050 4350 50  0001 C CNN
+F 3 "" H 1050 4350 50  0001 C CNN
+	1    1050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58F00F1B
+P 1050 4700
+F 0 "#PWR?" H 1050 4450 50  0001 C CNN
+F 1 "GND" H 1050 4550 50  0000 C CNN
+F 2 "" H 1050 4700 50  0001 C CNN
+F 3 "" H 1050 4700 50  0001 C CNN
+	1    1050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4600 1050 4600
+Wire Wire Line
+	1050 4600 1050 4700
+Wire Wire Line
+	1050 4350 1050 4450
+Wire Wire Line
+	1050 4450 1150 4450
+$Comp
+L GND #PWR?
+U 1 1 58F0193E
+P 2750 3700
+F 0 "#PWR?" H 2750 3450 50  0001 C CNN
+F 1 "GND" H 2750 3550 50  0000 C CNN
+F 2 "" H 2750 3700 50  0001 C CNN
+F 3 "" H 2750 3700 50  0001 C CNN
+	1    2750 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 3700 2750 3700
+Wire Wire Line
+	3400 3550 2650 3550
+Wire Wire Line
+	3400 3850 2650 3850
+Wire Wire Line
+	3400 4100 2650 4100
+Wire Wire Line
+	3400 4250 2650 4250
+$EndSCHEMATC
