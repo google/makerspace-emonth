@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:stm32
 LIBS:switches
+LIBS:ap3012
 LIBS:fpc
 LIBS:load_box-cache
 EELAYER 25 0

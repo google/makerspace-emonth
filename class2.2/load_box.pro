@@ -1,4 +1,4 @@
-update=Thu 13 Apr 2017 04:42:11 PM PDT
+update=Thu 13 Apr 2017 09:34:34 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -60,14 +70,5 @@ LibName28=contrib
 LibName29=valves
 LibName30=stm32
 LibName31=switches
-LibName32=/usr/local/google/home/thatch/goog/fpc
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName32=ap3012
+LibName33=fpc
