@@ -60,7 +60,7 @@ LibName28=contrib
 LibName29=valves
 LibName30=stm32
 LibName31=switches
-LibName32=/usr/local/google/home/thatch/goog/fpc
+LibName32=fpc
 [schematic_editor]
 version=1
 PageLayoutDescrFile=

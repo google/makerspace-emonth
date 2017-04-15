@@ -30,13 +30,12 @@ LIBS:contrib
 LIBS:valves
 LIBS:stm32
 LIBS:switches
-LIBS:fpc
 LIBS:load_box-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -46,4 +45,872 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L LM324 U1
+U 4 1 58F1EC62
+P 4700 3250
+F 0 "U1" H 4700 3450 50  0000 L CNN
+F 1 "LM324" H 4700 3050 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4650 3350 50  0001 C CNN
+F 3 "" H 4750 3450 50  0001 C CNN
+	4    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U1
+U 1 1 58F1EC9D
+P 3950 3350
+F 0 "U1" H 3950 3550 50  0000 L CNN
+F 1 "LM324" H 3950 3150 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3900 3450 50  0001 C CNN
+F 3 "" H 4000 3550 50  0001 C CNN
+	1    3950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U1
+U 2 1 58F1ECB6
+P 4350 5400
+F 0 "U1" H 4350 5600 50  0000 L CNN
+F 1 "LM324" H 4350 5200 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4300 5500 50  0001 C CNN
+F 3 "" H 4400 5600 50  0001 C CNN
+	2    4350 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LM324 U1
+U 3 1 58F1ECD5
+P 4400 7000
+F 0 "U1" H 4400 7200 50  0000 L CNN
+F 1 "LM324" H 4400 6800 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4350 7100 50  0001 C CNN
+F 3 "" H 4450 7200 50  0001 C CNN
+	3    4400 7000
+	1    0    0    -1  
+$EndComp
+Text HLabel 3000 2750 0    60   Input ~ 0
+CHOSEN_VREF
+Text HLabel 3250 5400 0    60   Output ~ 0
+MEASURED_VREF
+Text HLabel 2500 6800 0    60   Output ~ 0
+TEMPERATURE
+$Comp
+L Screw_Terminal_1x02 J3
+U 1 1 58F1ED80
+P 7650 3350
+F 0 "J3" H 7650 3600 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 7500 3350 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 7650 3125 50  0001 C CNN
+F 3 "" H 7625 3350 50  0001 C CNN
+	1    7650 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GDS Q2
+U 1 1 58F1EED3
+P 6150 3250
+F 0 "Q2" H 6350 3300 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 6350 3200 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6350 3350 50  0001 C CNN
+F 3 "" H 6150 3250 50  0001 C CNN
+	1    6150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 58F1D598
+P 6550 3800
+F 0 "R15" V 6630 3800 50  0000 C CNN
+F 1 "R" V 6550 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6480 3800 50  0001 C CNN
+F 3 "" H 6550 3800 50  0001 C CNN
+	1    6550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 58F1D5C7
+P 6450 3800
+F 0 "R14" V 6530 3800 50  0000 C CNN
+F 1 "R" V 6450 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6380 3800 50  0001 C CNN
+F 3 "" H 6450 3800 50  0001 C CNN
+	1    6450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 58F1D84C
+P 6350 3800
+F 0 "R13" V 6430 3800 50  0000 C CNN
+F 1 "R" V 6350 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6280 3800 50  0001 C CNN
+F 3 "" H 6350 3800 50  0001 C CNN
+	1    6350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 58F1D898
+P 6250 3800
+F 0 "R12" V 6330 3800 50  0000 C CNN
+F 1 "R" V 6250 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6180 3800 50  0001 C CNN
+F 3 "" H 6250 3800 50  0001 C CNN
+	1    6250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_1x02 J2
+U 1 1 58F1DF62
+P 7550 5300
+F 0 "J2" H 7550 5550 50  0000 C TNN
+F 1 "Screw_Terminal_1x02" V 7400 5300 50  0000 C TNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 7550 5075 50  0001 C CNN
+F 3 "" H 7525 5300 50  0001 C CNN
+	1    7550 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 58F1E0C2
+P 6850 4900
+F 0 "R23" V 6930 4900 50  0000 C CNN
+F 1 "R" V 6850 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6780 4900 50  0001 C CNN
+F 3 "" H 6850 4900 50  0001 C CNN
+	1    6850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 58F1E117
+P 6850 5300
+F 0 "R24" V 6930 5300 50  0000 C CNN
+F 1 "R" V 6850 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6780 5300 50  0001 C CNN
+F 3 "" H 6850 5300 50  0001 C CNN
+	1    6850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 58F1E174
+P 6850 5700
+F 0 "R25" V 6930 5700 50  0000 C CNN
+F 1 "R" V 6850 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6780 5700 50  0001 C CNN
+F 3 "" H 6850 5700 50  0001 C CNN
+	1    6850 5700
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 4800 0    60   ~ 0
+Remote sense
+Text Notes 7350 2850 0    60   ~ 0
+Main Load
+Wire Wire Line
+	6450 3550 6450 3650
+Wire Wire Line
+	6550 3550 6550 3650
+Connection ~ 6550 3550
+Wire Wire Line
+	6350 3550 6350 3650
+Connection ~ 6450 3550
+Wire Wire Line
+	6250 3450 6250 3650
+Connection ~ 6350 3550
+Wire Wire Line
+	6250 3950 6250 4150
+Wire Wire Line
+	6550 4050 6550 3950
+Connection ~ 6550 4050
+Wire Wire Line
+	6450 4050 6450 3950
+Connection ~ 6450 4050
+Wire Wire Line
+	6350 3950 6350 4050
+Connection ~ 6350 4050
+Wire Wire Line
+	7200 3450 7450 3450
+Wire Wire Line
+	6250 3050 6250 2850
+Wire Wire Line
+	6250 2850 7200 2850
+Wire Wire Line
+	7200 2850 7200 3250
+Wire Wire Line
+	7200 3250 7450 3250
+Wire Wire Line
+	6850 5050 6850 5150
+Wire Wire Line
+	6850 5450 6850 5550
+Wire Wire Line
+	5350 3850 5350 3550
+Connection ~ 6250 3550
+Wire Wire Line
+	3250 3250 3650 3250
+$Comp
+L R R6
+U 1 1 58F1EF26
+P 3250 3000
+F 0 "R6" V 3330 3000 50  0000 C CNN
+F 1 "R" V 3250 3000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3180 3000 50  0001 C CNN
+F 3 "" H 3250 3000 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 58F1EF8A
+P 3250 3500
+F 0 "R7" V 3330 3500 50  0000 C CNN
+F 1 "R" V 3250 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3180 3500 50  0001 C CNN
+F 3 "" H 3250 3500 50  0001 C CNN
+	1    3250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3150 3250 3350
+Connection ~ 3250 3250
+Wire Wire Line
+	3000 2750 3250 2750
+Wire Wire Line
+	3250 2750 3250 2850
+$Comp
+L GND #PWR17
+U 1 1 58F1F160
+P 3250 3750
+F 0 "#PWR17" H 3250 3500 50  0001 C CNN
+F 1 "GND" H 3250 3600 50  0000 C CNN
+F 2 "" H 3250 3750 50  0001 C CNN
+F 3 "" H 3250 3750 50  0001 C CNN
+	1    3250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3750 3250 3650
+$Comp
+L GND #PWR21
+U 1 1 58F1F20B
+P 4600 3550
+F 0 "#PWR21" H 4600 3300 50  0001 C CNN
+F 1 "GND" H 4600 3400 50  0000 C CNN
+F 2 "" H 4600 3550 50  0001 C CNN
+F 3 "" H 4600 3550 50  0001 C CNN
+	1    4600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR20
+U 1 1 58F1F2AA
+P 4600 2400
+F 0 "#PWR20" H 4600 2250 50  0001 C CNN
+F 1 "+12V" H 4600 2540 50  0000 C CNN
+F 2 "" H 4600 2400 50  0001 C CNN
+F 3 "" H 4600 2400 50  0001 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2400 4600 2950
+$Comp
+L C C7
+U 1 1 58F1F3A3
+P 4950 2650
+F 0 "C7" H 4975 2750 50  0000 L CNN
+F 1 "0.1" H 4975 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4988 2500 50  0001 C CNN
+F 3 "" H 4950 2650 50  0001 C CNN
+	1    4950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR22
+U 1 1 58F1F415
+P 4950 2800
+F 0 "#PWR22" H 4950 2550 50  0001 C CNN
+F 1 "GND" H 4950 2650 50  0000 C CNN
+F 2 "" H 4950 2800 50  0001 C CNN
+F 3 "" H 4950 2800 50  0001 C CNN
+	1    4950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2500 4600 2500
+Connection ~ 4600 2500
+$Comp
+L R R11
+U 1 1 58F1FC7F
+P 5300 3250
+F 0 "R11" V 5380 3250 50  0000 C CNN
+F 1 "100R" V 5300 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5230 3250 50  0001 C CNN
+F 3 "" H 5300 3250 50  0001 C CNN
+	1    5300 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3250 5150 3250
+Wire Wire Line
+	5450 3250 5950 3250
+Text Notes 7500 4100 0    60   ~ 0
+TODO: Low current grounds tie together\nTODO: Place AGND a diode drop lower than this screw term?
+$Comp
+L GND #PWR29
+U 1 1 58F205D0
+P 6250 4150
+F 0 "#PWR29" H 6250 3900 50  0001 C CNN
+F 1 "GND" H 6250 4000 50  0000 C CNN
+F 2 "" H 6250 4150 50  0001 C CNN
+F 3 "" H 6250 4150 50  0001 C CNN
+	1    6250 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 4050
+Wire Wire Line
+	7350 5200 7150 5200
+Wire Wire Line
+	7150 5200 7150 4700
+Wire Wire Line
+	7150 4700 6850 4700
+Wire Wire Line
+	6850 4700 6850 4750
+Wire Wire Line
+	6850 5850 6850 5950
+Wire Wire Line
+	6850 5900 7150 5900
+Wire Wire Line
+	7150 5900 7150 5400
+Wire Wire Line
+	7150 5400 7350 5400
+Connection ~ 6850 5900
+$Comp
+L INA128 U2
+U 1 1 58F21197
+P 6050 5300
+F 0 "U2" H 6200 5425 50  0000 L CNN
+F 1 "INA128" H 6200 5175 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6150 5300 50  0001 C CNN
+F 3 "" H 6150 5300 50  0001 C CNN
+	1    6050 5300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5100 6850 5100
+Connection ~ 6850 5100
+Wire Wire Line
+	6350 5500 6850 5500
+Connection ~ 6850 5500
+$Comp
+L R R19
+U 1 1 58F2132A
+P 6500 5300
+F 0 "R19" V 6580 5300 50  0000 C CNN
+F 1 "R" V 6500 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6430 5300 50  0001 C CNN
+F 3 "" H 6500 5300 50  0001 C CNN
+	1    6500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5200 6400 5200
+Wire Wire Line
+	6400 5200 6400 5150
+Wire Wire Line
+	6400 5150 6500 5150
+Wire Wire Line
+	6500 5450 6400 5450
+Wire Wire Line
+	6400 5450 6400 5400
+Wire Wire Line
+	6400 5400 6350 5400
+$Comp
+L GND #PWR28
+U 1 1 58F21660
+P 6050 5700
+F 0 "#PWR28" H 6050 5450 50  0001 C CNN
+F 1 "GND" H 6050 5550 50  0000 C CNN
+F 2 "" H 6050 5700 50  0001 C CNN
+F 3 "" H 6050 5700 50  0001 C CNN
+	1    6050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR27
+U 1 1 58F216B9
+P 6050 4650
+F 0 "#PWR27" H 6050 4500 50  0001 C CNN
+F 1 "+12V" H 6050 4790 50  0000 C CNN
+F 2 "" H 6050 4650 50  0001 C CNN
+F 3 "" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4650 6050 5000
+$Comp
+L C C8
+U 1 1 58F21787
+P 5700 4800
+F 0 "C8" H 5725 4900 50  0000 L CNN
+F 1 "0.1" H 5725 4700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5738 4650 50  0001 C CNN
+F 3 "" H 5700 4800 50  0001 C CNN
+	1    5700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4650 6050 4650
+Connection ~ 6050 4650
+$Comp
+L GND #PWR25
+U 1 1 58F218B9
+P 5700 4950
+F 0 "#PWR25" H 5700 4700 50  0001 C CNN
+F 1 "GND" H 5700 4800 50  0000 C CNN
+F 2 "" H 5700 4950 50  0001 C CNN
+F 3 "" H 5700 4950 50  0001 C CNN
+	1    5700 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 4400 1800 0    60   ~ 0
+TODO: 5V supply for analog
+Text Notes 8050 5250 0    60   ~ 0
+TODO: look up standard circuit where input may be 36V
+Wire Wire Line
+	5650 5300 4650 5300
+Wire Wire Line
+	4650 5500 4800 5500
+Wire Wire Line
+	4800 5500 4800 5950
+Wire Wire Line
+	4800 5950 3850 5950
+Wire Wire Line
+	3850 5950 3850 5400
+Wire Wire Line
+	3250 5400 4050 5400
+Connection ~ 3850 5400
+Text Notes 4050 4900 0    60   ~ 0
+Buffer out of an\nabundance of caution\n(INA is expensive)
+Text Notes 5650 2400 0    60   ~ 0
+TODO: simulate and reduce oscillations
+Text Notes 1350 3600 0    60   ~ 0
+TODO: resistor values for 3.3V = 6.6A,\nhere and shunt.
+Wire Wire Line
+	4250 3350 4400 3350
+Wire Wire Line
+	3650 3450 3550 3450
+Wire Wire Line
+	3550 3450 3550 3850
+$Comp
+L R R8
+U 1 1 58F22895
+P 3850 3850
+F 0 "R8" V 3930 3850 50  0000 C CNN
+F 1 "R" V 3850 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3780 3850 50  0001 C CNN
+F 3 "" H 3850 3850 50  0001 C CNN
+	1    3850 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 58F22986
+P 4550 3850
+F 0 "R9" V 4630 3850 50  0000 C CNN
+F 1 "R" V 4550 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4480 3850 50  0001 C CNN
+F 3 "" H 4550 3850 50  0001 C CNN
+	1    4550 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3350 4300 3850
+Wire Wire Line
+	4000 3850 4400 3850
+Connection ~ 4300 3350
+Connection ~ 4300 3850
+Wire Wire Line
+	3550 3850 3700 3850
+Wire Wire Line
+	4700 3850 5350 3850
+$Comp
+L TEST TP3
+U 1 1 58F234AD
+P 4300 3850
+F 0 "TP3" H 4300 4150 50  0000 C BNN
+F 1 "TEST" H 4300 4100 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 4300 3850 50  0001 C CNN
+F 3 "" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L TEST TP4
+U 1 1 58F23586
+P 4950 2500
+F 0 "TP4" H 4950 2800 50  0000 C BNN
+F 1 "TEST" H 4950 2750 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 2500
+$Comp
+L TEST TP2
+U 1 1 58F2362B
+P 3500 2650
+F 0 "TP2" H 3500 2950 50  0000 C BNN
+F 1 "TEST" H 3500 2900 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 3500 2650 50  0001 C CNN
+F 3 "" H 3500 2650 50  0001 C CNN
+	1    3500 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2650 3500 3250
+Connection ~ 3500 3250
+$Comp
+L TEST TP1
+U 1 1 58F23758
+P 3150 2650
+F 0 "TP1" H 3150 2950 50  0000 C BNN
+F 1 "TEST" H 3150 2900 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 3150 2650 50  0001 C CNN
+F 3 "" H 3150 2650 50  0001 C CNN
+	1    3150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2650 3150 2750
+Connection ~ 3150 2750
+$Comp
+L TEST TP5
+U 1 1 58F238BA
+P 5650 2850
+F 0 "TP5" H 5650 3150 50  0000 C BNN
+F 1 "TEST" H 5650 3100 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 5650 2850 50  0001 C CNN
+F 3 "" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2850 5650 3250
+Connection ~ 5650 3250
+$Comp
+L TEST TP6
+U 1 1 58F23A03
+P 6600 5000
+F 0 "TP6" H 6600 5300 50  0000 C BNN
+F 1 "TEST" H 6600 5250 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 6600 5000 50  0001 C CNN
+F 3 "" H 6600 5000 50  0001 C CNN
+	1    6600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST TP7
+U 1 1 58F23ABA
+P 6600 5600
+F 0 "TP7" H 6600 5900 50  0000 C BNN
+F 1 "TEST" H 6600 5850 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 6600 5600 50  0001 C CNN
+F 3 "" H 6600 5600 50  0001 C CNN
+	1    6600 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 5600 6600 5500
+Connection ~ 6600 5500
+Wire Wire Line
+	6600 5100 6600 5000
+Connection ~ 6600 5100
+Wire Wire Line
+	6050 5700 6050 5600
+$Comp
+L GND #PWR26
+U 1 1 58F24553
+P 5950 5700
+F 0 "#PWR26" H 5950 5450 50  0001 C CNN
+F 1 "GND" H 5950 5550 50  0000 C CNN
+F 2 "" H 5950 5700 50  0001 C CNN
+F 3 "" H 5950 5700 50  0001 C CNN
+	1    5950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5700 5950 5600
+$Comp
+L GND #PWR30
+U 1 1 58F247EA
+P 6850 6300
+F 0 "#PWR30" H 6850 6050 50  0001 C CNN
+F 1 "GND" H 6850 6150 50  0000 C CNN
+F 2 "" H 6850 6300 50  0001 C CNN
+F 3 "" H 6850 6300 50  0001 C CNN
+	1    6850 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 58F24861
+P 6850 6100
+F 0 "R26" V 6930 6100 50  0000 C CNN
+F 1 "R" V 6850 6100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6780 6100 50  0001 C CNN
+F 3 "" H 6850 6100 50  0001 C CNN
+	1    6850 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 6250 6850 6300
+Text Notes 7100 6300 0    60   ~ 0
+TODO: Ensures there is a common ground?\nDoes INA behave without it, or with\na super weak pulldown after the symmetric divider
+Text Notes 8050 5650 0    60   ~ 0
+TODO: zener to restrict +\nTODO: reverse protection
+$Comp
+L CONN_01X02 J1
+U 1 1 58F251D5
+P 5850 6500
+F 0 "J1" H 5850 6650 50  0000 C CNN
+F 1 "CONN_01X02" V 5950 6500 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 5850 6500 50  0001 C CNN
+F 3 "" H 5850 6500 50  0001 C CNN
+	1    5850 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GDS Q1
+U 1 1 58F2529A
+P 5300 7000
+F 0 "Q1" H 5500 7050 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5500 6950 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5500 7100 50  0001 C CNN
+F 3 "" H 5300 7000 50  0001 C CNN
+	1    5300 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6650 5400 6800
+$Comp
+L +12V #PWR23
+U 1 1 58F2577A
+P 5400 6300
+F 0 "#PWR23" H 5400 6150 50  0001 C CNN
+F 1 "+12V" H 5400 6440 50  0000 C CNN
+F 2 "" H 5400 6300 50  0001 C CNN
+F 3 "" H 5400 6300 50  0001 C CNN
+	1    5400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D3
+U 1 1 58F25B36
+P 5400 6500
+F 0 "D3" H 5400 6600 50  0000 C CNN
+F 1 "D" H 5400 6400 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123" H 5400 6500 50  0001 C CNN
+F 3 "" H 5400 6500 50  0001 C CNN
+	1    5400 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 6700 5650 6700
+Wire Wire Line
+	5650 6700 5650 6550
+Connection ~ 5400 6700
+Wire Wire Line
+	5650 6450 5650 6300
+Wire Wire Line
+	5650 6300 5400 6300
+Wire Wire Line
+	5400 6300 5400 6350
+Connection ~ 5400 6300
+$Comp
+L POT_TRIM RV1
+U 1 1 58F26167
+P 3500 6900
+F 0 "RV1" V 3325 6900 50  0000 C CNN
+F 1 "POT_TRIM" V 3400 6900 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3214G" H 3500 6900 50  0001 C CNN
+F 3 "" H 3500 6900 50  0001 C CNN
+	1    3500 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR19
+U 1 1 58F267F8
+P 3500 7150
+F 0 "#PWR19" H 3500 6900 50  0001 C CNN
+F 1 "GND" H 3500 7000 50  0000 C CNN
+F 2 "" H 3500 7150 50  0001 C CNN
+F 3 "" H 3500 7150 50  0001 C CNN
+	1    3500 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 7150 3500 7050
+Wire Wire Line
+	3500 6750 3500 6650
+Wire Wire Line
+	4100 6900 3650 6900
+Wire Wire Line
+	4100 7100 3050 7100
+$Comp
+L R R10
+U 1 1 58F26AEF
+P 4900 7000
+F 0 "R10" V 4980 7000 50  0000 C CNN
+F 1 "R" V 4900 7000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4830 7000 50  0001 C CNN
+F 3 "" H 4900 7000 50  0001 C CNN
+	1    4900 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 7000 5050 7000
+Wire Wire Line
+	4750 7000 4700 7000
+$Comp
+L GND #PWR24
+U 1 1 58F26CEB
+P 5400 7300
+F 0 "#PWR24" H 5400 7050 50  0001 C CNN
+F 1 "GND" H 5400 7150 50  0000 C CNN
+F 2 "" H 5400 7300 50  0001 C CNN
+F 3 "" H 5400 7300 50  0001 C CNN
+	1    5400 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 7300 5400 7200
+$Comp
+L +12V #PWR18
+U 1 1 58F26E1F
+P 3500 6650
+F 0 "#PWR18" H 3500 6500 50  0001 C CNN
+F 1 "+12V" H 3500 6790 50  0000 C CNN
+F 2 "" H 3500 6650 50  0001 C CNN
+F 3 "" H 3500 6650 50  0001 C CNN
+	1    3500 6650
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 6400 0    60   ~ 0
+TODO: add resistors to make trim pot\nmore useful
+$Comp
+L R R5
+U 1 1 58F270CD
+P 3050 6850
+F 0 "R5" V 3130 6850 50  0000 C CNN
+F 1 "R" V 3050 6850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2980 6850 50  0001 C CNN
+F 3 "" H 3050 6850 50  0001 C CNN
+	1    3050 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Thermistor_NTC TH1
+U 1 1 58F27173
+P 3050 7350
+F 0 "TH1" V 2875 7350 50  0000 C CNN
+F 1 "Thermistor_NTC" V 3175 7350 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 3050 7400 50  0001 C CNN
+F 3 "" H 3050 7400 50  0001 C CNN
+	1    3050 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 58F2720E
+P 3050 7600
+F 0 "#PWR16" H 3050 7350 50  0001 C CNN
+F 1 "GND" H 3050 7450 50  0000 C CNN
+F 2 "" H 3050 7600 50  0001 C CNN
+F 3 "" H 3050 7600 50  0001 C CNN
+	1    3050 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7600 3050 7500
+Wire Wire Line
+	3050 7000 3050 7200
+Connection ~ 3050 7100
+Wire Wire Line
+	3050 6700 3050 6650
+$Comp
+L +12V #PWR15
+U 1 1 58F275E1
+P 3050 6650
+F 0 "#PWR15" H 3050 6500 50  0001 C CNN
+F 1 "+12V" H 3050 6790 50  0000 C CNN
+F 2 "" H 3050 6650 50  0001 C CNN
+F 3 "" H 3050 6650 50  0001 C CNN
+	1    3050 6650
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 7550 0    60   ~ 0
+TODO: verify whether paralleled resistor useful for log scale, NYC side
+Text Notes 4100 6600 0    60   ~ 0
+TODO: damp output a lot
+Text Notes 1400 6200 0    60   ~ 0
+TODO: Ensure this is 3.3V max (and that we get 30-100C full range)
+Text Notes 4050 5100 0    60   ~ 0
+TODO: Maybe just series resistor?
+Wire Wire Line
+	6250 4050 7200 4050
+Wire Wire Line
+	7200 4050 7200 3450
+Wire Wire Line
+	5350 3550 6600 3550
+$Comp
+L Q_NMOS_GDS Q3
+U 1 1 58F29C6B
+P 6500 3050
+F 0 "Q3" H 6700 3100 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 6700 3000 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6700 3150 50  0001 C CNN
+F 3 "" H 6500 3050 50  0001 C CNN
+	1    6500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 58F29E6A
+P 5300 3050
+F 0 "R16" V 5380 3050 50  0000 C CNN
+F 1 "100R" V 5300 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5230 3050 50  0001 C CNN
+F 3 "" H 5300 3050 50  0001 C CNN
+	1    5300 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 3050 5100 3050
+Wire Wire Line
+	5100 3050 5100 3250
+Connection ~ 5100 3250
+Wire Wire Line
+	5450 3050 6300 3050
+Wire Wire Line
+	6600 3550 6600 3250
+Connection ~ 6600 2850
+$Comp
+L TEST TP8
+U 1 1 58F2A0EF
+P 5800 2850
+F 0 "TP8" H 5800 3150 50  0000 C BNN
+F 1 "TEST" H 5800 3100 50  0000 C CNN
+F 2 "Measurement_Points:Test_Point" H 5800 2850 50  0001 C CNN
+F 3 "" H 5800 2850 50  0001 C CNN
+	1    5800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2850 5800 3050
+Connection ~ 5800 3050
 $EndSCHEMATC
