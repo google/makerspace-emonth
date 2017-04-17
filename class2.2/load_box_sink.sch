@@ -913,4 +913,8 @@ $EndComp
 Wire Wire Line
 	5800 2850 5800 3050
 Connection ~ 5800 3050
+Text Notes 2400 4850 0    60   ~ 0
+TODO Rename this for the fact\nit's just scaked voltage across\nthe terminals, and not anything\nto do with current.
+Text Notes 7450 4900 0    60   ~ 0
+TODO diodes vs the main connector as in a PSU?
 $EndSCHEMATC
