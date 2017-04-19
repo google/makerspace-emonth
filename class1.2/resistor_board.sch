@@ -1,0 +1,514 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino_micro
+LIBS:zeropin
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ADUINO_MICRO M1
+U 1 1 58E9C449
+P 3200 3300
+F 0 "M1" H 3200 3300 60  0000 C CNN
+F 1 "ADUINO_MICRO" H 2900 4150 60  0000 C CNN
+F 2 "Arduino_Micro:Arduino_Micro" H 3200 3300 60  0001 C CNN
+F 3 "" H 3200 3300 60  0001 C CNN
+	1    3200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK J4
+U 1 1 58E9C4CD
+P 2650 1800
+F 0 "J4" H 2650 1995 50  0000 C CNN
+F 1 "BARREL_JACK" H 2650 1645 50  0000 C CNN
+F 2 "Connectors-Tim:BARREL_JACK" H 2650 1800 50  0001 C CNN
+F 3 "" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SYMBOL P1
+U 1 1 58E9C645
+P 2650 1350
+F 0 "P1" H 2650 1300 60  0000 C CNN
+F 1 "SYMBOL" H 2650 1400 60  0000 C CNN
+F 2 "Symbols:Polarity_Center_Positive_6mm_SilkScreen" H 2650 1350 60  0001 C CNN
+F 3 "" H 2650 1350 60  0001 C CNN
+	1    2650 1350
+	1    0    0    -1  
+$EndComp
+Text Notes 3000 1400 0    60   ~ 0
+Polarity mark
+$Comp
+L GND #PWR01
+U 1 1 58E9C883
+P 3050 2000
+F 0 "#PWR01" H 3050 1750 50  0001 C CNN
+F 1 "GND" H 3050 1850 50  0000 C CNN
+F 2 "" H 3050 2000 50  0001 C CNN
+F 3 "" H 3050 2000 50  0001 C CNN
+	1    3050 2000
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 1100 0    60   ~ 0
+We rely on the regulator in the Micro\nto turn this into 5V.
+$Comp
+L GND #PWR02
+U 1 1 58E9C951
+P 4200 4100
+F 0 "#PWR02" H 4200 3850 50  0001 C CNN
+F 1 "GND" H 4200 3950 50  0000 C CNN
+F 2 "" H 4200 4100 50  0001 C CNN
+F 3 "" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58E9C971
+P 2150 4000
+F 0 "#PWR03" H 2150 3750 50  0001 C CNN
+F 1 "GND" H 2150 3850 50  0000 C CNN
+F 2 "" H 2150 4000 50  0001 C CNN
+F 3 "" H 2150 4000 50  0001 C CNN
+	1    2150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT_Dual RV1
+U 1 1 58E9C9CF
+P 3000 6150
+F 0 "RV1" H 3000 6300 50  0000 C CNN
+F 1 "POT_Dual" H 3000 6225 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK163_Double_Vertical" H 3250 6075 50  0001 C CNN
+F 3 "" H 3250 6075 50  0001 C CNN
+	1    3000 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58E9CADA
+P 2900 6050
+F 0 "#PWR04" H 2900 5800 50  0001 C CNN
+F 1 "GND" H 2900 5900 50  0000 C CNN
+F 2 "" H 2900 6050 50  0001 C CNN
+F 3 "" H 2900 6050 50  0001 C CNN
+	1    2900 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 58E9CAF6
+P 2900 5750
+F 0 "#PWR05" H 2900 5600 50  0001 C CNN
+F 1 "+5V" H 2900 5890 50  0000 C CNN
+F 2 "" H 2900 5750 50  0001 C CNN
+F 3 "" H 2900 5750 50  0001 C CNN
+	1    2900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 J3
+U 1 1 58E9CB12
+P 2600 6250
+F 0 "J3" H 2600 6350 50  0000 C CNN
+F 1 "CONN_01X01" V 2700 6250 50  0000 C CNN
+F 2 "Connectors-Tim:BANANA_VIA" H 2600 6250 50  0001 C CNN
+F 3 "" H 2600 6250 50  0001 C CNN
+	1    2600 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J1
+U 1 1 58E9CB60
+P 2600 6650
+F 0 "J1" H 2600 6750 50  0000 C CNN
+F 1 "CONN_01X01" V 2700 6650 50  0000 C CNN
+F 2 "Connectors-Tim:BANANA_VIA" H 2600 6650 50  0001 C CNN
+F 3 "" H 2600 6650 50  0001 C CNN
+	1    2600 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 J2
+U 1 1 58E9CBB5
+P 3400 6400
+F 0 "J2" H 3400 6500 50  0000 C CNN
+F 1 "CONN_01X01" V 3500 6400 50  0000 C CNN
+F 2 "Connectors-Tim:BANANA_VIA" H 3400 6400 50  0001 C CNN
+F 3 "" H 3400 6400 50  0001 C CNN
+	1    3400 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 5900 2    60   Output ~ 0
+POT_INPUT
+$Comp
+L LCD16X2 DS1
+U 1 1 58E9CEAA
+P 8200 3300
+F 0 "DS1" H 7400 3700 50  0000 C CNN
+F 1 "LCD16X2" H 8900 3700 50  0000 C CNN
+F 2 "Displays:WC1602A" H 8200 3250 50  0001 C CIN
+F 3 "" H 8200 3300 50  0001 C CNN
+	1    8200 3300
+	0    1    1    0   
+$EndComp
+Text GLabel 4500 3500 2    60   Input ~ 0
+POT_INPUT
+$Comp
+L POT_TRIM RV2
+U 1 1 58E9D943
+P 7750 5100
+F 0 "RV2" V 7575 5100 50  0000 C CNN
+F 1 "POT_TRIM" V 7650 5100 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3339W_Vertical" H 7750 5100 50  0001 C CNN
+F 3 "" H 7750 5100 50  0001 C CNN
+	1    7750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58E9DA20
+P 7750 5250
+F 0 "#PWR06" H 7750 5000 50  0001 C CNN
+F 1 "GND" H 7750 5100 50  0000 C CNN
+F 2 "" H 7750 5250 50  0001 C CNN
+F 3 "" H 7750 5250 50  0001 C CNN
+	1    7750 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR07
+U 1 1 58E9DA4F
+P 7750 4950
+F 0 "#PWR07" H 7750 4800 50  0001 C CNN
+F 1 "+5V" H 7750 5090 50  0000 C CNN
+F 2 "" H 7750 4950 50  0001 C CNN
+F 3 "" H 7750 4950 50  0001 C CNN
+	1    7750 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 8000 5100 2    60   Output ~ 0
+LCD_CONTRAST
+Text GLabel 7400 2750 0    60   Input ~ 0
+LCD_CONTRAST
+$Comp
+L R R1
+U 1 1 58E9E02B
+P 7150 3950
+F 0 "R1" V 7230 3950 50  0000 C CNN
+F 1 "220R" V 7150 3950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7080 3950 50  0001 C CNN
+F 3 "" H 7150 3950 50  0001 C CNN
+	1    7150 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 58E9E090
+P 6900 3950
+F 0 "#PWR08" H 6900 3800 50  0001 C CNN
+F 1 "+5V" H 6900 4090 50  0000 C CNN
+F 2 "" H 6900 3950 50  0001 C CNN
+F 3 "" H 6900 3950 50  0001 C CNN
+	1    6900 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 58E9E120
+P 7600 4150
+F 0 "#PWR09" H 7600 3900 50  0001 C CNN
+F 1 "GND" H 7600 4000 50  0000 C CNN
+F 2 "" H 7600 4150 50  0001 C CNN
+F 3 "" H 7600 4150 50  0001 C CNN
+	1    7600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR010
+U 1 1 58E9E1CF
+P 7500 2550
+F 0 "#PWR010" H 7500 2400 50  0001 C CNN
+F 1 "+5V" H 7500 2690 50  0000 C CNN
+F 2 "" H 7500 2550 50  0001 C CNN
+F 3 "" H 7500 2550 50  0001 C CNN
+	1    7500 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 3550 0    60   Input ~ 0
+LCD_D4
+Text GLabel 7400 3650 0    60   Input ~ 0
+LCD_D5
+Text GLabel 7400 3750 0    60   Input ~ 0
+LCD_D6
+Text GLabel 7400 3850 0    60   Input ~ 0
+LCD_D7
+Text GLabel 7400 3050 0    60   Input ~ 0
+LCD_E
+Text GLabel 7400 2850 0    60   Input ~ 0
+LCD_RS
+NoConn ~ 7700 3150
+NoConn ~ 7700 3250
+NoConn ~ 7700 3350
+NoConn ~ 7700 3450
+$Comp
+L SYMBOL P2
+U 1 1 58E9EBC8
+P 6200 6850
+F 0 "P2" H 6200 6800 60  0000 C CNN
+F 1 "SYMBOL" H 6200 6900 60  0000 C CNN
+F 2 "Symbols:OSHW-Logo_11.4x12mm_SilkScreen" H 6200 6850 60  0001 C CNN
+F 3 "" H 6200 6850 60  0001 C CNN
+	1    6200 6850
+	1    0    0    -1  
+$EndComp
+Text Notes 5950 6600 0    60   ~ 0
+OSHW Logo
+Text GLabel 1950 3600 0    60   Output ~ 0
+LCD_D4
+Text GLabel 1950 3700 0    60   Output ~ 0
+LCD_D5
+Text GLabel 1950 3800 0    60   Output ~ 0
+LCD_D6
+Text GLabel 1950 3900 0    60   Output ~ 0
+LCD_D7
+Text GLabel 1950 3400 0    60   Output ~ 0
+LCD_E
+Text GLabel 1950 3100 0    60   Output ~ 0
+LCD_RS
+Text Notes 2400 4450 0    60   ~ 0
+Intended for a\nhttps://www.sparkfun.com/products/12640
+$Comp
+L C C1
+U 1 1 58EA019B
+P 4350 3750
+F 0 "C1" H 4375 3850 50  0000 L CNN
+F 1 "0.1" H 4375 3650 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 4388 3600 50  0001 C CNN
+F 3 "" H 4350 3750 50  0001 C CNN
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1700 4200 1700
+Wire Wire Line
+	2950 1800 3050 1800
+Wire Wire Line
+	3050 1800 3050 2000
+Wire Wire Line
+	2950 1900 3050 1900
+Connection ~ 3050 1900
+Wire Wire Line
+	4100 2700 4200 2700
+Wire Wire Line
+	4200 2700 4200 1700
+Wire Wire Line
+	2300 2900 2150 2900
+Wire Wire Line
+	2150 2900 2150 4000
+Wire Wire Line
+	2300 3000 2150 3000
+Connection ~ 2150 3000
+Wire Wire Line
+	4100 2800 4200 2800
+Wire Wire Line
+	4200 2800 4200 4100
+Wire Wire Line
+	2800 6250 2900 6250
+Wire Wire Line
+	3200 6400 3100 6400
+Wire Wire Line
+	3350 5900 3100 5900
+Wire Wire Line
+	4100 3500 4500 3500
+Wire Wire Line
+	2800 6650 2900 6650
+Wire Wire Line
+	2900 6650 2900 6550
+Wire Wire Line
+	8000 5100 7900 5100
+Wire Wire Line
+	7700 2750 7400 2750
+Wire Wire Line
+	7300 3950 7700 3950
+Wire Wire Line
+	7600 4050 7700 4050
+Wire Wire Line
+	7600 2550 7600 4150
+Wire Wire Line
+	7700 2550 7600 2550
+Connection ~ 7600 4050
+Wire Wire Line
+	7500 2550 7500 2650
+Wire Wire Line
+	7500 2650 7700 2650
+Wire Wire Line
+	7700 2850 7400 2850
+Wire Wire Line
+	7700 3050 7400 3050
+Wire Wire Line
+	7700 2950 7600 2950
+Connection ~ 7600 2950
+Wire Wire Line
+	7700 3550 7400 3550
+Wire Wire Line
+	7700 3650 7400 3650
+Wire Wire Line
+	7700 3750 7400 3750
+Wire Wire Line
+	7700 3850 7400 3850
+Wire Wire Line
+	7000 3950 6900 3950
+Wire Wire Line
+	2300 3900 1950 3900
+Wire Wire Line
+	1950 3800 2300 3800
+Wire Wire Line
+	2300 3700 1950 3700
+Wire Wire Line
+	2300 3600 1950 3600
+Wire Wire Line
+	2300 3100 1950 3100
+Wire Wire Line
+	4350 3500 4350 3600
+Connection ~ 4350 3500
+Wire Wire Line
+	4350 3900 4350 4000
+Wire Wire Line
+	4350 4000 4200 4000
+Connection ~ 4200 4000
+$Comp
+L +5V #PWR011
+U 1 1 58EA0513
+P 4400 2900
+F 0 "#PWR011" H 4400 2750 50  0001 C CNN
+F 1 "+5V" H 4400 3040 50  0000 C CNN
+F 2 "" H 4400 2900 50  0001 C CNN
+F 3 "" H 4400 2900 50  0001 C CNN
+	1    4400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3000 4400 3000
+Wire Wire Line
+	4400 3000 4400 2900
+NoConn ~ 4100 2900
+NoConn ~ 4100 3600
+NoConn ~ 4100 3700
+NoConn ~ 4100 3800
+NoConn ~ 4100 3900
+NoConn ~ 2300 3500
+Wire Wire Line
+	4100 3100 4200 3100
+Connection ~ 4200 3100
+Wire Wire Line
+	4100 3200 4200 3200
+Connection ~ 4200 3200
+Wire Wire Line
+	4100 3400 4200 3400
+Connection ~ 4200 3400
+Wire Wire Line
+	2300 3400 1950 3400
+Wire Wire Line
+	2300 3200 1550 3200
+Text GLabel 1550 3200 0    60   Input ~ 0
+BUTTON
+$Comp
+L CONN_01X02 J5
+U 1 1 58EA0CDA
+P 7750 5750
+F 0 "J5" H 7750 5900 50  0000 C CNN
+F 1 "CONN_01X02" V 7850 5750 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_Tactile_SKHH_Angled" H 7750 5750 50  0001 C CNN
+F 3 "" H 7750 5750 50  0001 C CNN
+	1    7750 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 58EA0D85
+P 8050 6150
+F 0 "#PWR012" H 8050 5900 50  0001 C CNN
+F 1 "GND" H 8050 6000 50  0000 C CNN
+F 2 "" H 8050 6150 50  0001 C CNN
+F 3 "" H 8050 6150 50  0001 C CNN
+	1    8050 6150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 5700 2    60   Output ~ 0
+BUTTON
+$Comp
+L C C2
+U 1 1 58EA0E9D
+P 8300 5850
+F 0 "C2" H 8325 5950 50  0000 L CNN
+F 1 "0.1" H 8325 5750 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 8338 5700 50  0001 C CNN
+F 3 "" H 8300 5850 50  0001 C CNN
+	1    8300 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 6000 8300 6150
+Wire Wire Line
+	7950 5800 8050 5800
+Wire Wire Line
+	8050 5800 8050 6150
+Wire Wire Line
+	8550 5700 7950 5700
+$Comp
+L GND #PWR013
+U 1 1 58EA1120
+P 8300 6150
+F 0 "#PWR013" H 8300 5900 50  0001 C CNN
+F 1 "GND" H 8300 6000 50  0000 C CNN
+F 2 "" H 8300 6150 50  0001 C CNN
+F 3 "" H 8300 6150 50  0001 C CNN
+	1    8300 6150
+	1    0    0    -1  
+$EndComp
+Text Notes 8550 6000 0    60   ~ 0
+Debounce cap
+Connection ~ 8300 5700
+$EndSCHEMATC
