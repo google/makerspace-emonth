@@ -1,4 +1,4 @@
-update=Sat 08 Apr 2017 09:50:44 PM PDT
+update=Mon 12 Jun 2017 04:41:25 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../makerspace-partsbin/electronics/_kicad_library
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,5 +58,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/tim/kicad/tim-kicad-libs/arduino_micro
-LibName31=/home/tim/kicad/tim-kicad-libs/zeropin
+LibName30=arduino_micro
+LibName31=zeropin
+LibName32=buckmodule

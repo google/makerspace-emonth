@@ -30,6 +30,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:arduino_micro
 LIBS:zeropin
+LIBS:buckmodule
+LIBS:resistor_board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -82,12 +84,12 @@ Polarity mark
 $Comp
 L GND #PWR01
 U 1 1 58E9C883
-P 3050 2000
-F 0 "#PWR01" H 3050 1750 50  0001 C CNN
-F 1 "GND" H 3050 1850 50  0000 C CNN
-F 2 "" H 3050 2000 50  0001 C CNN
-F 3 "" H 3050 2000 50  0001 C CNN
-	1    3050 2000
+P 3050 2100
+F 0 "#PWR01" H 3050 1850 50  0001 C CNN
+F 1 "GND" H 3050 1950 50  0000 C CNN
+F 2 "" H 3050 2100 50  0001 C CNN
+F 3 "" H 3050 2100 50  0001 C CNN
+	1    3050 2100
 	1    0    0    -1  
 $EndComp
 Text Notes 2100 1100 0    60   ~ 0
@@ -331,18 +333,12 @@ F 3 "" H 4350 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 1700 4200 1700
-Wire Wire Line
 	2950 1800 3050 1800
 Wire Wire Line
-	3050 1800 3050 2000
+	3050 1800 3050 2100
 Wire Wire Line
 	2950 1900 3050 1900
 Connection ~ 3050 1900
-Wire Wire Line
-	4100 2700 4200 2700
-Wire Wire Line
-	4200 2700 4200 1700
 Wire Wire Line
 	2300 2900 2150 2900
 Wire Wire Line
@@ -355,15 +351,15 @@ Wire Wire Line
 Wire Wire Line
 	4200 2800 4200 4100
 Wire Wire Line
-	2800 6250 2900 6250
+	2800 6250 4200 6250
 Wire Wire Line
-	3200 6400 3100 6400
+	3100 6400 3200 6400
 Wire Wire Line
 	3350 5900 3100 5900
 Wire Wire Line
 	4100 3500 4500 3500
 Wire Wire Line
-	2800 6650 2900 6650
+	2800 6650 4200 6650
 Wire Wire Line
 	2900 6650 2900 6550
 Wire Wire Line
@@ -496,7 +492,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 5800 8050 6150
 Wire Wire Line
-	8550 5700 7950 5700
+	7950 5700 8550 5700
 $Comp
 L GND #PWR013
 U 1 1 58EA1120
@@ -511,4 +507,76 @@ $EndComp
 Text Notes 8550 6000 0    60   ~ 0
 Debounce cap
 Connection ~ 8300 5700
+Wire Wire Line
+	3150 1700 2950 1700
+Wire Wire Line
+	4200 1750 4050 1750
+$Comp
+L GND #PWR014
+U 1 1 593F27D3
+P 3600 2100
+F 0 "#PWR014" H 3600 1850 50  0001 C CNN
+F 1 "GND" H 3600 1950 50  0000 C CNN
+F 2 "" H 3600 2100 50  0001 C CNN
+F 3 "" H 3600 2100 50  0001 C CNN
+	1    3600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L BuckModule M2
+U 1 1 593F2ACF
+P 3600 1750
+F 0 "M2" H 3600 1950 60  0000 C CNN
+F 1 "BuckModule" H 3600 1550 60  0000 C CNN
+F 2 "BuckModule:BuckModule" H 3600 1800 60  0001 C CNN
+F 3 "" H 3600 1800 60  0001 C CNN
+	1    3600 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3150 1800
+$Comp
+L +5V #PWR015
+U 1 1 593F2D0D
+P 4200 1650
+F 0 "#PWR015" H 4200 1500 50  0001 C CNN
+F 1 "+5V" H 4200 1790 50  0000 C CNN
+F 2 "" H 4200 1650 50  0001 C CNN
+F 3 "" H 4200 1650 50  0001 C CNN
+	1    4200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1650 4200 1750
+NoConn ~ 4100 2700
+NoConn ~ 4550 100 
+$Comp
+L CONN_01X03 J6
+U 1 1 5940F6B3
+P 4600 6400
+F 0 "J6" H 4600 6600 50  0000 C CNN
+F 1 "CONN_01X03" V 4700 6400 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 4600 6400 50  0001 C CNN
+F 3 "" H 4600 6400 50  0001 C CNN
+	1    4600 6400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4400 6400 4050 6400
+Wire Wire Line
+	4400 6500 4200 6500
+Wire Wire Line
+	4200 6300 4400 6300
+Wire Wire Line
+	4200 6250 4200 6300
+Connection ~ 2900 6250
+Wire Wire Line
+	3150 6400 3150 6300
+Wire Wire Line
+	3150 6300 4050 6300
+Wire Wire Line
+	4050 6300 4050 6400
+Connection ~ 3150 6400
+Wire Wire Line
+	4200 6500 4200 6650
+Connection ~ 2900 6650
 $EndSCHEMATC
