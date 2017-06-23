@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Arduino_Micro)(type KiCad)(uri "$(KIPRJMOD)/../makerspace-partsbin/electronics/_kicad_library/Arduino_Micro.pretty")(options "")(descr ""))
+  (lib (name BuckModule)(type KiCad)(uri "$(KIPRJMOD)/../makerspace-partsbin/electronics/_kicad_library/BuckModule.pretty")(options "")(descr ""))
+  (lib (name Connectors2)(type KiCad)(uri "$(KIPRJMOD)/../makerspace-partsbin/electronics/_kicad_library/Connectors2.pretty")(options "")(descr ""))
+)
